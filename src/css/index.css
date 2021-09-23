@@ -1,0 +1,23 @@
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/* stylelint-disable */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/*stylelint-enable*/
+
+body {
+      font-family: degular, sans-serif;
+      line-height: 4.2rem;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(255, 255, 255);
+  color: #2B2B2B;
+}
