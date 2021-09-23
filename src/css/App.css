@@ -161,7 +161,7 @@ margin-top: 2rem;
   height: 4rem;
   background-color: #D093FF;
   text-decoration: none;
-    font-family: degular, sans-serif;
+    font-family: "degular", sans-serif;
 
 }
 
@@ -476,7 +476,7 @@ margin-top: 2rem;
 .team_form_submit {
     background-color: #D093FF;
     color: white;
-    font-family: degular, sans-serif;
+    font-family: "degular", sans-serif;
     font-size: 2rem;
     font-weight: 700;
     border: none;
