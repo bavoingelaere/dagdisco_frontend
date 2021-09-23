@@ -413,7 +413,6 @@ margin-top: 2rem;
     display: grid;
     grid-template-rows: auto 1fr auto;
     justify-items: center;
-    height: 100vh;
 }
 
 .radio {
