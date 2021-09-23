@@ -30,7 +30,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* <section className="section">
+      <section className="section">
         <div className="action">
           <p className="going_once">Going once</p>
           <p className="going_twice">Going twice...</p>
@@ -56,7 +56,7 @@ const Home = () => {
             <p className="timer_timer">14:23</p>
           </div>
         </div>
-      </section> */}
+      </section>
 
       <section className="section section_board">
         <div className="scoreboard">
