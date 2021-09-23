@@ -474,7 +474,7 @@ margin-top: 2rem;
 }
 
 .team_form_submit {
-    background-color: #D093FF;
+    background: none;
     color: white;
     font-family: "degular", sans-serif;
     font-size: 2rem;
@@ -482,6 +482,10 @@ margin-top: 2rem;
     border: none;
     text-decoration: none;
     padding: 1rem 1.5rem;
+}
+
+.team_form_submit_container {
+    background-color: #D093FF;
 }
 
 

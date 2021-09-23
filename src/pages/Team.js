@@ -93,7 +93,9 @@ const Team = () => {
                     </div>
                     <div className="number_container">
                         <input className="amount" type="number" name="amount" required></input>
+                        <div className="team_form_submit_container">
                         <input className="team_form_submit" type="submit" value="SAVE"></input>
+                        </div>
                     </div>
                 </form>
             </div>
