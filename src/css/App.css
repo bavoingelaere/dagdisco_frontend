@@ -415,6 +415,7 @@ margin-top: 2rem;
     grid-template-rows: auto 1fr auto;
     justify-items: center;
     height: 100vh;
+    overflow: hidden;
 }
 
 .radio {
