@@ -407,12 +407,14 @@ margin-top: 2rem;
 }
 
 .team {
+    overflow: hidden;
 }
 
 .team_form {
     display: grid;
     grid-template-rows: auto 1fr auto;
     justify-items: center;
+    height: 100vh;
 }
 
 .radio {
