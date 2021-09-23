@@ -7,7 +7,7 @@ const Home = () => {
   const [teams, setTeams] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:1337/teams`)
+    fetch(`https://dagdisco.herokuapp.com/teams`)
       .then(response => response.json())
       .then(data => setTeams(data.reverse()))
   }, [])

@@ -8,7 +8,7 @@ const Team = () => {
     const [teams, setTeams] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:1337/teams`)
+        fetch(`https://dagdisco.herokuapp.com/teams`)
         .then(response => response.json())
         .then(data => setTeams(data.reverse()))
     }, [])
@@ -36,10 +36,10 @@ const Team = () => {
 
     const onSubmit = async (data, id) => {
         console.log(data);
-        console.log(`http://localhost:1337/teams/${id}`);
+        console.log(`https://dagdisco.herokuapp.com/teams/${id}`);
 
         const response = await fetch(
-            `http://localhost:1337/teams/${id}`,
+            `https://dagdisco.herokuapp.com/teams/${id}`,
             {
                 method: "PUT",
                 body: JSON.stringify(data),

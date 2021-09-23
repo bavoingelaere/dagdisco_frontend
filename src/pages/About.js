@@ -23,7 +23,7 @@ const About = () => {
   const onSubmit = async (train) => {
     console.log(train);
     const response = await fetch(
-      `http://localhost:1337/teams/`,
+      `https://dagdisco.herokuapp.com/teams/`,
       {
         method: "POST",
         body: JSON.stringify(train),
