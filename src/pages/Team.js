@@ -24,18 +24,18 @@ const Team = () => {
         e.preventDefault();
         const id = e.target.team.value;
         const team = teams.filter(team => parseInt(team.id) === parseInt(id));
+        const newBeers = parseInt(e.target.amount.value) + parseInt(team[0].beers);
 
         const data = {
             beers: parseInt(e.target.amount.value) + parseInt(team[0].beers)
         };
 
         e.target.reset();
-        onSubmit(data, id);
-        window.location.reload();
+        onSubmit(data, id, newBeers);
     };
 
 
-    const onSubmit = async (data, id) => {
+    const onSubmit = async (data, id, newBeers) => {
         console.log(data);
         console.log(`https://dagdisco.herokuapp.com/teams/${id}`);
 
@@ -51,8 +51,15 @@ const Team = () => {
         );
         if (response.ok) {
             console.log('joepie');
-            window.location.reload();
+            const teamsNew = [...teams];
+            teamsNew.forEach(element => {
+                if(element.id === id) {
+                    element.beers = newBeers;
+                }
+                
+            });
 
+            setTeams(teamsNew);
         }
     };
 
