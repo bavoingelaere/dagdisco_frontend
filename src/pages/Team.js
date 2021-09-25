@@ -51,6 +51,8 @@ const Team = () => {
         );
         if (response.ok) {
             console.log('joepie');
+            window.location.reload();
+
         }
     };
 
