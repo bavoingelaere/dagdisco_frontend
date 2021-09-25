@@ -54,12 +54,8 @@ const Team = () => {
         if (response.ok) {
             console.log('joepie');
             const teamsNew = [...teams];
-            teamsNew.forEach(element => {
-                if(element.id === id) {
-                    element.beers = newBeers;
-                }
-                
-            });
+            const team = teamsNew.filter(team => parseInt(team.id) === parseInt(id));
+            team.beers = newBeers;
 
             console.log(teams);
 
