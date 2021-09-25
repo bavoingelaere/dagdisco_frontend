@@ -55,7 +55,9 @@ const Team = () => {
             console.log('joepie');
             const teamsNew = [...teams];
             const team = teamsNew.filter(team => parseInt(team.id) === parseInt(id));
+            console.log(team);
             team.beers = newBeers;
+            
 
             console.log(teams);
 
