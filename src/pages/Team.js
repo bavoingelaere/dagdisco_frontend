@@ -26,6 +26,8 @@ const Team = () => {
         const team = teams.filter(team => parseInt(team.id) === parseInt(id));
         const newBeers = parseInt(e.target.amount.value) + parseInt(team[0].beers);
 
+        console.log(parseInt(team[0].beers) + ' ' + newBeers);
+
         const data = {
             beers: parseInt(e.target.amount.value) + parseInt(team[0].beers)
         };
@@ -58,6 +60,10 @@ const Team = () => {
                 }
                 
             });
+
+            console.log(teams);
+
+            console.log(teamsNew);
 
             setTeams(teamsNew);
         }
