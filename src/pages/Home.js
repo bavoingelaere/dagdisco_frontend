@@ -6,6 +6,8 @@ const Home = () => {
 
   const [teams, setTeams] = useState([]);
 
+  console.log('test');
+
   useEffect(() => {
     fetch(`https://dagdisco.herokuapp.com/teams`)
       .then(response => response.json())
