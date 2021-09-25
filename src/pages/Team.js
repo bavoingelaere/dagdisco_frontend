@@ -31,6 +31,7 @@ const Team = () => {
 
         e.target.reset();
         onSubmit(data, id);
+        window.location.reload();
     };
 
 
